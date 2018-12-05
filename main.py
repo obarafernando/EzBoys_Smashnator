@@ -4,6 +4,9 @@ import random
 def yes_or_no():
     return "[ y or n ] "
 
+def answer_to_bool(answer):
+    return answer == "y" or answer == "Y"
+
 def main():
     characters = list()
     with open('characters.txt','r') as f:
@@ -17,15 +20,17 @@ def main():
         while len(current_characters) > 1:
             random_question = random.randint(0, 8)
             random_character = random.choice(current_characters)
-            answer = True
+            answer = random.choice([True, False])
             current_characters = list(filter(lambda x: x[random_question + 1] == random_character[random_question + 1] if answer \
                     else x[random_question + 1] != random_character[random_question + 1], current_characters))
 
-        for character in current_characters:
-            print(character)
+        if not current_characters:
+            print("do not know this character")
+        else:
+            print(current_characters[0])
 
-        answer = input("another one? " + yes_or_no())
-        another_one = answer == "y" or answer == "Y"
+        answer = answer_to_bool(input("another one? " + yes_or_no()))
+        another_one = answer
 
 if __name__ == "__main__":
     main()
