@@ -1,5 +1,6 @@
 from Character import Character
 from Questions import randomQuestion
+from Questions import randomIndex
 import random
 
 def yes_or_no():
@@ -25,7 +26,7 @@ def main():
     while another_one:
         current_characters = characters
         while len(current_characters) > 1:
-            random_question = random.randint(1, 9)
+            random_question = randomIndex(current_characters)
             print(random_question)
             random_character = random.choice(current_characters)
             answer = answer_to_bool(input(randomQuestion(random_character, random_question) + " " + yes_or_no()))
@@ -38,7 +39,7 @@ def main():
         if not current_characters:
             print("do not know this character")
         else:
-            answer = answer_to_bool(input(randomQuestion(current_characters[0], 0)) + " " + yes_or_no())
+            answer = answer_to_bool(input(randomQuestion(current_characters[0], 0) + " " + yes_or_no()))
             print(current_characters[0] if answer else "do not know this character")
 
         answer = answer_to_bool(input("another one? " + yes_or_no()))

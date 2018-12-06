@@ -1,10 +1,9 @@
-Pikachu nao_tem Pokemon n n s s n n n
 DrMario masculino Mario s n n n s n n
 Mario masculino Mario s n n s n n n
-Luigi masculino Mario s n n n s n n
+Luigi masculino Mario s n n n n n n
 Bowser nao_tem Mario n s n n n n n
 Peach feminino Mario s n n n n n n
-Yoshi nao_tem Mario n n n n s n n
+Yoshi nao_tem Mario n n n n n n n
 DK masculino DK n n n s n n n
 Cap.Falco masculino Fzero s n n s n n n
 Ganondorf masculino Zelda s s n n n n n
@@ -16,7 +15,7 @@ Kirby nao_tem Kirby n n n s n s n
 Samus feminino Metroid s n n s n n n
 Zelda feminino Zelda s n n n n n n
 Link masculino Zelda s n n s n n n
-YoungLink masculino Zelda s n n s n s n
+YoungLink masculino Zelda s n n s s s n
 Pichu nao_tem Pokemon n n s n n s n
 Pikachu nao_tem Pokemon n n s s n n n
 Jigglypuff nao_tem Pokemon n n s n n n n
