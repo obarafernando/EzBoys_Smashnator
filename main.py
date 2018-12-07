@@ -27,14 +27,11 @@ def main():
         current_characters = characters
         while len(current_characters) > 1:
             random_question = randomIndex(current_characters)
-            #print(random_question)
             random_character = random.choice(current_characters)
             answer = answer_to_bool(input(randomQuestion(random_character, random_question) + " " + yes_or_no()))
             compare_string = comparation_string(random_question, answer, random_character)
             current_characters = list(filter(lambda x: x[random_question] == compare_string if answer \
                     else x[random_question] != compare_string, current_characters))
-            #for character in current_characters:
-                #print(character)
 
         if not current_characters:
             print("do not know this character")

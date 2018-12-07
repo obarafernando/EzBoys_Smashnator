@@ -5,13 +5,13 @@ def randomQuestion(character, randomIndex):
     question = character
     questionIndex = randomIndex
     if questionIndex == 0:
-        questionString = 'O personagem e o: ' + question.name + '?'
+        questionString = 'O personagem e o/a: ' + question.name + '?'
     if questionIndex == 1 and question.gender == 'masculino':
         questionString = 'O personagem e masculino?'
     if questionIndex == 1 and question.gender == 'feminino':
         questionString = 'O personagem e feminino?'
     if questionIndex == 1 and question.gender == 'nao_tem':
-        questionString = 'O personagem não tem gênero?'
+        questionString = 'O personagem nao tem genero?'
     if questionIndex == 2:
         questionString = 'O personagem pertence ao jogo: ' + question.game + '?'
     if questionIndex == 3:
@@ -23,9 +23,9 @@ def randomQuestion(character, randomIndex):
     if questionIndex == 6:
         questionString= 'O personagem e o mais conhecido do mundo dele?'
     if questionIndex == 7:
-        questionString = 'O personagem e uma variação da serie original?'
+        questionString = 'O personagem e uma variacao da serie original?'
     if questionIndex == 8:
-        questionString = 'O personagem e uma criança?'
+        questionString = 'O personagem e uma crianca?'
     if questionIndex == 9:
         questionString = 'O personagem e considerado Top Tier?'
 
@@ -87,3 +87,4 @@ def randomIndex(current_characters):
     index_avaible = index_avaible[0]
 
     return index_avaible
+
