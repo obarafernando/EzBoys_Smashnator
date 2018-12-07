@@ -50,31 +50,40 @@ def randomIndex(current_characters):
     for x in range(0, len(available_characters)):
         if available_characters[x].gender != gender:
             index_avaible.append(1)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].game != game:
             index_avaible.append(2)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].human != human:
             index_avaible.append(3)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].antagonist != antagonist:
             index_avaible.append(4)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].pokemon != pokemon:
             index_avaible.append(5)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].most_known != most_known:
             index_avaible.append(6)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].variation != variation:
             index_avaible.append(7)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].child != child:
             index_avaible.append(8)
+            break
     for x in range(0, len(available_characters)):
         if available_characters[x].top_tier != top_tier:
             index_avaible.append(9)
-    index_avaible = set(index_avaible)
+            break
     index_avaible = random.sample(index_avaible, 1)
     index_avaible = index_avaible[0]
+
     return index_avaible
